@@ -1,19 +1,48 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-import Home from '../views/Home.vue';
-import Comunas from '../views/Comunas';
+import EditarCategory from ' ../components/categories/EditarCategory.vue';
+import NewCategory from ' ../components/categories/NewCategory.vue';
+import Customers from '../views/Customers';
+import Categories from '../views/Categories';
+import Paymodes from '../views/Paymodes';
+import Products from '../views/Products';
 
 const routes = [
-  {
-    path: '/comunas',
-    name: 'Comunas',
-    component: Comunas
-  },
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/customers',
+    name: 'Customers',
+    component: Customers
+  },
+  {
+    path: '/categories',
+    name: 'Categories',
+    component: Categories
+  },
+  {
+    panth: '/editar-category/:id',
+    name: 'EditarCategory',
+    component: EditarCategory
+  },
+  {
+    panth: '/add-category/:id',
+    name: 'NewCategory',
+    component: NewCategory
+  },
+  {
+    path: '/paymodes',
+    name: 'Paymodes',
+    component: Paymodes
+  },
+  {
+    path: '/products',
+    name: 'Products',
+    component: Products
   },
   {
     path: '/about',
