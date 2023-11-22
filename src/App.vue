@@ -1,10 +1,14 @@
 <template>  
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
+  <nav>
+    <router-link to="/">Homes</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/comunas">Comunas</router-link> |
-  </div>
+    <router-link to="/customers">Customers</router-link> |
+    <router-link to="/categories">Categories</router-link> |
+    <router-link to="/paymodes">Pay Modes</router-link> 
+    <router-link to="/products">Products</router-link> 
+  </nav>
   <router-view/>
+
 </template>
 
 <style>
